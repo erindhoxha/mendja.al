@@ -3,24 +3,22 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CoursesComponent } from './courses.component';
-import { CourseComponent } from './course/course.component';
-import { CoursesService } from './courses.service';
 import { NavbarComponent } from './navbar/navbar.component';
+import { HeaderComponent } from './header/header.component';
+import { FeaturedComponent } from './featured/featured.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CoursesComponent,
-    CourseComponent,
-    NavbarComponent
+    NavbarComponent,
+    HeaderComponent,
+    FeaturedComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [
-    CoursesService
   ],
   bootstrap: [AppComponent]
 })

@@ -6,11 +6,35 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-  public navLinks: Array<string>;
-
+  public navLinks: Array<object>;
   constructor() { 
-    this.navLinks = ['Home', 'About']
-  }
+    this.navLinks = [
+    {
+      icon: 'fas fa-th',
+      navLink: 'Kategorite',
+      navHref: '#',
+    },
+    {
+      // icon: 'fab fa-buromobelexperte',
+      navLink: 'N\'shtepi',
+      navHref: '#',
+    },
+    {
+      // icon: 'fab fa-buromobelexperte',
+      navLink: 'Kontakto',
+      navHref: '#',
+    },
+    {
+      // icon: 'fab fa-buromobelexperte',
+      navLink: 'Kurset',
+      navHref: '#',
+    },
+    {
+      // icon: 'fab fa-buromobelexperte',
+      navLink: 'Per Ne',
+      navHref: '#',
+    }]
+}
 
   ngOnInit() {
   }

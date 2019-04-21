@@ -1,0 +1,22 @@
+a:hover {
+    color:#7a1420;
+}
+a {
+    margin:28px;
+    width:100px;
+    transition:0.5s ease;
+    color:white;
+    text-decoration: none;
+    padding:5px;
+    border-radius:5px;
+}
+.brand {
+    color:black;
+}
+#navbar {
+    background-color: transparent;
+    position:absolute;
+    width:100%;
+    color:white;
+    margin-top:30px;
+}

@@ -1,7 +1,6 @@
-<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
-    <h5 class="my-0 mr-md-auto font-weight-normal">Company name</h5>
-    <nav class="my-2 my-md-0 mr-md-3" *ngFor="let navLink of navLinks">
-      <a class="p-2 text-dark" (click)="consoleLog(navLink)" href="#">{{navLink}}</a>
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 box-shadow collapse" id="navbar">
+    <h5 class="my-0 mr-md-auto font-weight-normal brand">(logo) mendja.al</h5>
+    <nav class="my-2 my-md-0 mr-md-3 collapse-sm">
+      <a *ngFor="let navLink of navLinks" (click)="consoleLog(navLink)" href="{{navLink.navHref}}"><i class="{{navLink.icon}}"></i> {{navLink.navLink}}</a>
     </nav>
-    <a class="btn btn-outline-primary" href="#">Sign up</a>
 </div>
