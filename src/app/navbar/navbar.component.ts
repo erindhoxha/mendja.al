@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
+  public navLinks: Array<string>;
 
-  constructor() { }
+  constructor() { 
+    this.navLinks = ['Home', 'About']
+  }
 
   ngOnInit() {
   }
 
+  public consoleLog(item) {
+    console.log('Hi I\'m a button! ' + item);
+  }
 }
