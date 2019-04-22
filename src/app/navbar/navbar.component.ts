@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  appTitle: string = 'mendja.al';
+  appTitle: string = 'Mendja';
 
   public navLinks: Array<object>;
   constructor() { 

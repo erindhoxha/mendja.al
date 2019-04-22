@@ -1,10 +1,19 @@
 <div class="container-fluid header">
   <div class="row row-top">
     <div class="col-lg-6 col-12 col-md-12 col-sm-12">
-      <h1 class="header-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, aut.</h1>
+      <h1 [ngClass]="{
+        'red': makeHeaderRedOrNot,
+        'large': !makeHeaderRedOrNot
+      }" class="header-text">{{headerText}}</h1>
       <p class="header-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, aut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, vel!</p>
       <button mat-flat-button>Click me!</button>
       <button class="cta-mendja-button">See more</button>
+      <!-- <ul *ngIf="users">
+        <li *ngFor="let user of users.data">
+          <img [src]='user.avatar'>
+          <p>{{user.first_name}} {{user.last_name}}</p>
+        </li>
+      </ul> -->
     </div>
   </div>
 </div>
