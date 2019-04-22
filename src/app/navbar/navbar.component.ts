@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
+
+  appTitle: string = 'mendja.al';
+
   public navLinks: Array<object>;
   constructor() { 
     this.navLinks = [
@@ -17,12 +20,12 @@ export class NavbarComponent implements OnInit {
     {
       // icon: 'fab fa-buromobelexperte',
       navLink: 'N\'shtepi',
-      navHref: '#',
+      navHref: '/',
     },
     {
       // icon: 'fab fa-buromobelexperte',
       navLink: 'Kontakto',
-      navHref: '#',
+      navHref: '/contact',
     },
     {
       // icon: 'fab fa-buromobelexperte',
